@@ -1,21 +1,16 @@
 # Datasets for Segmentation and Multilable Classification
 import os
-import random
 
-import cv2
 import numpy as np
-import pandas as pd
 import jpeg4py as jpeg
 import torch
-import torch.nn as nn
 from torch.utils.data import Dataset
-import albumentations as albu
 
-from utils import (
+from code.utils import (
     rle2mask,
     _fix_seeds
 )
-from configs import SEED
+from code.configs import SEED
 
 
 # Datasets for segmentation

@@ -3,7 +3,7 @@ import os
 import torch
 from torch.utils.data import Sampler
 
-from configs import (
+from code.configs import (
     TRAIN_PATH,
 )
 

@@ -1,8 +1,6 @@
 # Trainer Class for Multilabel classificaiton
 import sys
-import copy
 
-import cv2
 import torch
 import numpy as np
 from datetime import datetime
@@ -12,10 +10,8 @@ import torch.optim as optim
 import torchvision
 from torch.utils.data import DataLoader
 
-from utils import _fix_seeds
-from metrics import dice_coeff_mean
-from meter import Meter
-from samplers import ClassProbSampler
+from code.utils import _fix_seeds
+from code.samplers import ClassProbSampler
 
 
 def _init_fn(worker_id):

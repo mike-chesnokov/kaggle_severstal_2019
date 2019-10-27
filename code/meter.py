@@ -1,9 +1,7 @@
 import numpy as np
-import pandas as pd
 import torch
-import torch.nn as nn
 
-from metrics import dice_coeff_mean
+from code.metrics import dice_coeff_mean
 
 
 class Meter(object):

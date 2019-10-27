@@ -1,16 +1,12 @@
 import os
 import random
-import pickle
 
 import cv2
 import torch
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 
-from configs import (
-    TRAIN_PATH,
-    TEST_PATH,
+from code.configs import (
     CLASS_RGB_COLOR,
     SEED
 )

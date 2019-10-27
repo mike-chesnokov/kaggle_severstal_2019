@@ -6,15 +6,13 @@ import numpy as np
 import segmentation_models_pytorch as smp
 from datetime import datetime
 from tqdm import tqdm
-import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
-from sklearn.model_selection import KFold
 
-from utils import _fix_seeds, mask2rle
-from metrics import dice_coeff_mean
-from meter import Meter
-from samplers import ClassProbSampler, SubsetRandomSampler, SubsetSequentSampler
+from code.utils import _fix_seeds, mask2rle
+from code.metrics import dice_coeff_mean
+from code.meter import Meter
+from code.samplers import ClassProbSampler, SubsetRandomSampler, SubsetSequentSampler
 
 
 def _init_fn(worker_id):
